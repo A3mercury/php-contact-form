@@ -30,7 +30,8 @@
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
 
-    @stack('scripts')
+    <script src="{{ asset('js/app.js') }}"></script>
+
 </body>
 
 </html>
