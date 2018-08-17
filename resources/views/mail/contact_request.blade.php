@@ -1,13 +1,13 @@
 @component('mail::message')
 
-**Full Name:** {{ $contact_request->full_name }}
+<p><strong>Full Name:</strong> {{ $contact_request->full_name }}</p>
 
-**Email:** {{ $contact_request->email }}
+<p><strong>Email:</strong> {{ $contact_request->email }}</p>
 
-**Phone Number:** {{ strlen($contact_request->phone) > 0 ? $contact_request->phone : '-' }}
+<p><strong>Phone Number:</strong> {{ strlen($contact_request->phone) > 0 ? $contact_request->phone : '-' }}</p>
 
-**Message:**
+<p><strong>Message:</strong></p>
 
-{{ $contact_request->message }}
+<p>{{ $contact_request->message }}</p>
 
 @endcomponent
