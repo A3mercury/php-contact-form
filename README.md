@@ -12,12 +12,13 @@ I've used MySQL for the database, but you'll have to create the actual database 
 Once your `.env` file is set, you can run a few commands:
 ```
 composer install
+php artisan make:database
 composer set-database
 npm install
 npm run production
 ```
 
-Those should get the project ready to go. `composer set-database` runs a few commands in a row:
+Those should get the project ready to go. `php artisan make:database` is a custom command that should create a new database using the database name in your `.env` file. `composer set-database` is a custom composer command that runs a few commands in a row:
 ```
 composer dump
 php artisan migrate:fresh
